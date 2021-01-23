@@ -1,0 +1,32 @@
+<aiml version="0.9.3" encoding="UTF-8">
+
+<category>
+   <pattern>* NEW STRAIN *</pattern>
+   <template>Have you travelled to UK in the past 15 days?</template>
+</category>
+<category>
+   <pattern>NEW STRAIN *</pattern>
+   <template>Have you travelled to UK in the past 15 days?</template>
+</category>
+<category>
+   <pattern>* NEW STRAIN</pattern>
+   <template>Have you travelled to UK in the past 15 days?</template>
+</category>
+<category>
+   <pattern>NEW STRAIN</pattern>
+   <template>Have you travelled to UK in the past 15 days?</template>
+</category>
+
+<category>
+   <pattern>YES</pattern>
+   <that>HAVE YOU TRAVELLED TO UK IN THE PAST 15 DAYS</that>
+   <template>Please get yourself tested for COVID-19</template>
+</category>
+
+<category>
+   <pattern>NO</pattern>
+   <that>HAVE YOU TRAVELLED TO UK IN THE PAST 15 DAYS</that>
+   <template>Then its good. You should be safe.</template>
+</category>
+
+</aiml>

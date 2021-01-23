@@ -1,0 +1,79 @@
+<aiml version="0.9.3" encoding="UTF-8">
+<!-- basic_chat.aiml -->
+
+    <category>
+        <pattern>HELLO</pattern>
+        <template>
+            Hello! I hope you are doing great. Nice to see you!
+        </template>
+    </category>
+    
+    <category>
+        <pattern>WHO ARE YOU</pattern>
+        <template>
+           I am Curo the Cobot, a chatbot for answering questions related to COVID-19. Feel free to ask me anything! : )
+        </template>
+    </category>
+    <category>
+        <pattern>HI</pattern>
+        <template>
+            Hi! Hope you are healthy and safe.
+        </template>
+    </category>
+
+    <category>
+       <pattern>HI I AM *</pattern>
+       <template>Hi <think><set name = "username"> <star/></set></think>! Hope you are healthy and safe.</template>
+    </category>
+
+    <category>
+       <pattern>HI MY NAME IS *</pattern>
+       <template>Hi <think><set name = "username"> <star/></set></think>! Hope you are healthy and safe.</template>
+    </category>
+    <category>
+       <pattern>I AM * </pattern>
+       <template>Hi <think><set name = "username"> <star/></set></think>! Hope you are healthy and safe.</template>
+    </category>
+     <category>
+       <pattern>MY NAME IS * </pattern>
+       <template>Hi <think><set name = "username"> <star/></set></think>!  Hope you are healthy and safe.</template>
+    </category> 
+    
+
+    
+    
+    <category>
+        <pattern>WHAT ARE YOU</pattern>
+        <template>
+            I'm a Cobot- a chatbot for answering COVID-19 related questions.
+        </template>
+    </category>
+     <category>
+      <pattern>MY NAME IS ABC</pattern>
+      <template>
+         Nice name <set name="username"><star/></set>
+      </template>  
+   </category>  
+   <category>
+      <pattern>WHAT IS MY NAME</pattern>
+      <template>
+         Your name is <get name="username"/>.
+      </template>  
+   </category>
+   <category>
+      <pattern>Tell my name</pattern>
+      <template>
+         Your name is <get name="username"/>.
+      </template>  
+   </category> 
+   <category>
+      <pattern>OK</pattern>
+      <template>Good</template>
+   </category>
+
+   <category>
+      <pattern>*</pattern>
+      <template>Sorry, I don't have an answer for that.</template>
+   </category>
+     
+</aiml>

@@ -1,0 +1,73 @@
+<aiml version="0.9.3" encoding="UTF-8">
+
+    <category>
+       <pattern>DO I HAVE COVID </pattern>
+       <template>Is your body temperature above 100 Fahrenheit?</template>
+    </category>
+
+    <category>
+       <pattern>HOW DO I KNOW * COVID </pattern>
+       <template>
+           <srai>DO I HAVE COVID</srai>
+       </template>
+    </category>
+    <category>
+       <pattern>HOW DO I KNOW * COVID * </pattern>
+       <template>
+           <srai>DO I HAVE COVID</srai>
+       </template>
+    </category>
+
+
+    <category>
+       <pattern>YES</pattern>
+       <that>IS YOUR BODY TEMPERATURE ABOVE 100 FAHRENHEIT</that>
+       <template>Then I advise you to get yourselves tested for COVID-19</template>
+    </category>
+
+   <category>
+       <pattern>NO</pattern>
+       <that>IS YOUR BODY TEMPERATURE ABOVE 100 FAHRENHEIT</that>
+       <template>Do you have dry cough?</template>
+    </category>
+
+    <category>
+       <pattern>YES</pattern>
+       <that>DO YOU HAVE DRY COUGH</that>
+       <template>Then I advise you to get yourselves tested for COVID-19</template>
+    </category>
+
+    <category>
+       <pattern>NO</pattern>
+       <that>DO YOU HAVE DRY COUGH</that>
+       <template>Are you able to smell properly?</template>
+    </category>
+
+    <category>
+       <pattern>NO</pattern>
+       <that>ARE YOU ABLE TO SMELL PROPERLY</that>
+       <template>
+          Then I advise you to get yourselves tested for COVID-19. Most likely you are COVID positive.
+       </template>
+    </category>
+
+    <category>
+       <pattern>YES</pattern>
+       <that>ARE YOU ABLE TO SMELL PROPERLY</that>
+       <template>Have you come in close contact with a person who has tested positive?</template>
+    </category>  
+    <category>
+       <pattern>YES</pattern>
+       <that>HAVE YOU COME IN CLOSE CONTACT WITH A PERSON WHO HAS TESTED POSITIVE</that>
+       <template>The I advise you to get yourselves tested for COVID-19.</template>
+   </category>
+   <category>
+      <pattern>NO</pattern>
+      <that>HAVE YOU COME IN CLOSE CONTACT WITH A PERSON WHO HAS TESTED POSITIVE</that>
+      <template>You have no symptoms of COVID-19. Keep following the precautions.</template>
+   </category>
+    <category>
+       <pattern>I * fever *</pattern>
+       <template>Please self-isolate yourself and get yourselves tested asap</template>
+    </category>
+    </aiml>
